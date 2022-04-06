@@ -7,12 +7,19 @@ import lombok.Setter;
 @Setter
 public class FruitBox extends FruitShop {
 
+    public enum ripeningSeasonEnum{
+        SUMMER,
+        AUTUMN,
+        WINTER,
+        SPRING
+    }
+
     private  String nameOfFruitInBox;
     private  String colourOfFruitInBox;
-    private  String ripeningSeason;
+    ripeningSeasonEnum ripeningSeason;
     private  int price; //per kilogram
 
-    public FruitBox(String nameOfFruitInBox, String colourOfFruitInBox, String ripeningSeason, int price) {
+    public FruitBox(String nameOfFruitInBox, String colourOfFruitInBox,ripeningSeasonEnum ripeningSeason, int price) {
         this.nameOfFruitInBox = nameOfFruitInBox;
         this.colourOfFruitInBox = colourOfFruitInBox;
         this.ripeningSeason = ripeningSeason;
