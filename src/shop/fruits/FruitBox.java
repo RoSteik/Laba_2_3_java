@@ -16,7 +16,7 @@ public class FruitBox extends FruitShop {
 
     private  String nameOfFruitInBox;
     private  String colourOfFruitInBox;
-    ripeningSeasonEnum ripeningSeason;
+    private ripeningSeasonEnum ripeningSeason;
     private  int price; //per kilogram
 
     public FruitBox(String nameOfFruitInBox, String colourOfFruitInBox,ripeningSeasonEnum ripeningSeason, int price) {
